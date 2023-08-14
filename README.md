@@ -2,9 +2,14 @@
 
 ## Installation
 ```Shell
-git clone --recurse-submodules git@github.com:Gorilla-Lab-SCUT/MAST.git
-cd MAST
-conda env create -n MAST --file environment.yaml
+git clone git@github.com:Gorilla-Lab-SCUT/MAST.git
+mkdir deps && cd deps
+git clone https://github.com/ylabbe/bop_toolkit_cosypose.git
+git clone https://github.com/ylabbe/bullet3.git
+git clone https://github.com/ylabbe/job-runner
+git clone https://github.com/ylabbe/bop_toolkit_challenge20
+cd ..
+conda env create -n MAST --file MAST/config_env/environment.yaml
 conda activate MAST
 python setup.py develop  # install locally
 runjob-config MAST/config_env/job-runner-config.yaml  # config runjob
