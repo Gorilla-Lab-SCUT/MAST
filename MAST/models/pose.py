@@ -150,7 +150,7 @@ class zHeadNet(nn.Module):
                 for i, l in enumerate(self.features):
                     x = l(x)
                 x = x.flatten(2).mean(dim=-1)
-                x = F.normalize(x, p=2, dim=1)
+                # x = F.normalize(x, p=2, dim=1)
                 z_bin = self.z_bin(x).detach()
                 z_delta = self.z_delta(x).detach()
                 outputs = dict(
@@ -163,7 +163,7 @@ class zHeadNet(nn.Module):
             for i, l in enumerate(self.features):
                 x = l(x)
             x = x.flatten(2).mean(dim=-1)
-            x = F.normalize(x, p=2, dim=1)
+            # x = F.normalize(x, p=2, dim=1)
             z_bin = self.z_bin(x)
             z_delta = self.z_delta(x)
             outputs = dict(
