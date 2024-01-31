@@ -32,3 +32,22 @@ Please see the scripts in `test.sh`
 
 ## Acknowledgements
 Our implementation leverages the code from [CosyPose](https://github.com/ylabbe/cosypose.git).
+
+## Citation
+```bibtex
+@inproceedings{ijcai2023p193,
+  title     = {Manifold-Aware Self-Training for Unsupervised Domain Adaptation on Regressing 6D Object Pose},
+  author    = {Zhang, Yichen and Lin, Jiehong and Chen, Ke and Xu, Zelin and Wang, Yaowei and Jia, Kui},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on
+               Artificial Intelligence, {IJCAI-23}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Edith Elkind},
+  pages     = {1740--1748},
+  year      = {2023},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2023/193},
+  url       = {https://doi.org/10.24963/ijcai.2023/193},
+}
+
+```
